@@ -1,0 +1,27 @@
+//Fraction.java
+public class Fraction
+{
+       private int numerator;
+       private int denominator;
+       
+       public Fraction(int num, int den)
+       {
+           numerator = num;
+           denominator = den;
+       }
+       
+       public String toString()
+       {
+           return numerator + "/" + denominator;
+       }
+}
+
+//FractionTester.java
+public class FractionTester extends ConsoleProgram
+{
+    public void run()
+    {
+        Fraction half = new Fraction(1, 2);
+        System.out.println(half);
+    }
+}
